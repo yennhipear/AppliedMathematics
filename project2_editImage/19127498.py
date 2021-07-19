@@ -86,11 +86,10 @@ def main():
     #inputfilename = input("Enter image name: ")
     #rose_img = Image.open(inputfilename)
 
-    rose_img  = Image.open("rose.jpeg")
+    rose_img      = Image.open("rose.jpeg")
     coverflag_img = Image.open("coverflag.jpeg")
-    flag_img  = Image.open("flag.jpeg")
+    flag_img      = Image.open("flag.jpeg")
 
-    """
     img_bri  = changeBrightness(rose_img)
     img_bri.save("brightnessImg.jpeg")
 
@@ -105,10 +104,10 @@ def main():
 
     img_ovrlay = overlay2Image(coverflag_img, flag_img)
     img_ovrlay.save("overlayImg.jpeg")
-    """
-
+    
     img_blur = blurImage(rose_img)
-    #img_blur.save("blurImg.jpeg")
+    img_blur.save("blurImg.jpeg")
+
     plt.imshow(img_blur)
     plt.show()
 
